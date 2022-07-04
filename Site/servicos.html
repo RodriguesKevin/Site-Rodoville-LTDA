@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodoville</title>
+    <title>Serviços</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-</head>
+
 <body>
     <!--Criando cabeçalho-->
     <div class="header" id="header">
@@ -23,7 +23,7 @@
             <img src="icones/logo-menor2.png" class="img_logo_header" alt="Logo">
         </div>
         <!--Criando menu de navegação-->
-        <div class="navigation_header" id="navigation_header">
+        <div class="navigation_header" id="navigation_header" style="height: 440%;">
             <button onclick="toggleSidebar()" class="btn_icon_header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
@@ -36,81 +36,46 @@
         </div>
     </div>
     <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
-        <div class="quadro">
-            
-            <div class="slides">
-                <input class="input" type="radio" name="slide" id="slide1" checked>
-                <input class="input" type="radio" name="slide" id="slide2">
-                <input class="input" type="radio" name="slide" id="slide3">
-                <input class="input" type="radio" name="slide" id="slide4">
-
-                <div class="slide s1">
-                    <img src="icones/Pagina1.jpg" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="icones/Pagina2.jpg" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="icones/Pagina3.jpg" alt="">
-                </div>
+        <div class="text_servi">
+            <h1 class="titulo_text">Locação de veiculos e serviços</h1>
+            <ul>
+                <li>Carros</li>
+                <li>Utilitários</li>
+                <li>Caminhões</li>
+                <li>Máquinas</li>
+                <li>Motocicletas</li>
+                <li>Tercerização de mão de obra</li>
+                <li>Transporte Escolar</li>
                 
-                <div class="slide">
-                    <img src="icones/Pagina4.jpg" alt="">
-                </div>
-            </div>
+            </ul>
         </div>
-        <div class="navigation">
-            <label  class="bar" for="slide1"></label>
-            <label  class="bar" for="slide2"></label>
-            <label  class="bar" for="slide3"></label>
-            <label  class="bar" for="slide4"></label>
-        </div>
-        <img class="tituloimg" src="icones/Clientes.png"> 
-        <div class="clientes">
-               
-            <div class="cidades">
-                <a href="https://www.aracariguama.sp.gov.br" target="_blank" title="Prefeitura de Araçariguama">
-                <img src="clientes/Araçariguama.png" alt="clientes" >
-                <h1>Araçariguama</h1>
-                </a>
-           </div>
-           <div class="cidades">
-                <a href="https://portal.barueri.sp.gov.br" target="_blank" title="Prefeitura de Barueri">
-                <img src="clientes/Barueri.png" alt="clientes">
-                <h1>Barueri</h1>
-                </a>
-           </div>
-           <div class="cidades">
-                <a href="https://capivari.sp.gov.br/portal/" target="_blank" title="Prefeitura de Capivari">
-                <img src="clientes/Capivari.png" alt="clientes">
-                <h1>Capivari</h1>
-                </a>
+        <div class="servicos">
+            <div class="min_img">
+                <div class="miniatura" ><img src="Img/Strada.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Strada2.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Gol.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Van_educa.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Caminhão 3.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Caminhão.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Caminhão2.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Uti.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Van_educa2.jpeg"></div>
+                <div class="miniatura" ><img src="Img/Van_escolar.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Van_escolar2.jpeg" ></div>
+                <div class="miniatura" ><img src="Img/Viaturas2.jfif"></div>
+                <div class="miniatura" ><img src="Img/Viaturas.jpg"></a></div>    
             </div>
-           <div class="cidades">
-                <a href="https://itapevi.sp.gov.br" target="_blank" title="Prefeitura de Itapevi">
-                <img src="clientes/Itapevi.png" alt="clientes" >
-                <h1>Itapevi</h1>
-                </a>    
-           </div>
-           <div class="cidades">
-                <a href="https://www.piraporadobomjesus.sp.gov.br" target="_blank" title="Prefeitura de Pirapora do Bom Jesus">
-                <img src="clientes/Pirapora.png" alt="clientes">
-                <h1>Pirapora do Bom Jesus</h1>
-                </a>   
+        </div>  
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="Img/Caminhão 3.jpeg">
             </div>
-           <div class="cidades">
-                <a href="https://www.vargemgrandepaulista.sp.gov.br/site/" target="_blank" title="Prefeitura de Vargem Grande Paulista">
-                <img src="clientes/VargemGrande.png" alt="clientes">
-                <h1>Vargem Grande Paulista</h1>
-                </a>
-           </div>
+        <div class="espaco">
+            
         </div>
-
-       <!-- Rodapé -->
+            <!-- Rodapé -->
         <footer>
-            <div class="boxs" style="margin-top: 5vw" >
+            <div class="boxs" style="margin-top: 5vw;">
                 <h2>RODOVILLE - LOCAÇÃO DE VEÍCULOS E SERVIÇOS </h2>
                 <ul>
                     <li>
@@ -129,7 +94,7 @@
             </div>
         </footer>
     </div>
-    
+   
 </body>
 <script src="java.js"></script>
-</html> 
+</html>

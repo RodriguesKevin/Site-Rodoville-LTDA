@@ -1,3 +1,4 @@
+/* CABEÇALHO */
 var header = document.getElementById('header');
 var navigationHeader = document.getElementById('navigation_header');
 var content =  document.getElementById('content')
@@ -38,6 +39,7 @@ window.addEventListener('resize', function(event){
     }
 });
 
+/* SLIDE */
 let contador =1;
 setInterval(function() {
     document.getElementById('slide' + contador).checked=true;
@@ -48,3 +50,14 @@ setInterval(function() {
 
     }
 },6000);
+/*SERVIÇOS*/
+document.querySelectorAll('.min_img img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup-image span').onclick = () => {
+    document.querySelector('.popup-image').style.display = 'none';
+}

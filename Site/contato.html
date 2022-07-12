@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+     <!--Criando cabeçalho-->
+     <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header"><!--Adicionando botão de lista-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <!--Colocando a logo no header(Cabeçalho)-->
+        <div class="logo_header">
+            <img src="icones/logo-menor2.png" class="img_logo_header" alt="Logo">
+        </div>
+        <!--Criando menu de navegação-->
+        <div class="navigation_header" id="navigation_header" style="height: 440%;">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="servicos.html" class="active">Serviços</a>
+            <a href="contato.html" class="active">Contato</a>
+            <a href="sobre.html"  class="active">Sobre</a>
+        </div>
+
+
+    </div>
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+        <!-- Conteudo -->
+        <div class="contato">
+            <div class="contatenos">
+                <h1 class="text_cont">Entre em contato conosco</h1>  
+            </div>
+            <div class="email">
+                <i class="material-icons" style="font-size: 400%; margin-top: -5%; color: gray;">mail</i>
+                <h2 style="color: rgb(65, 64, 64);">E-mail</h2>
+                <h4 style="color: rgb(93, 93, 93); margin-top: 2%;">Entre em contato por E-mail</h4>
+                <h3 style="color: rgb(65, 64, 64); margin-top: 2%;">Rodoville2@uol.com.br</h3>
+            </div>
+            <div class="telefone">
+                <i class="material-icons" style="font-size: 400%; margin-top: -5%; color: gray;">call_end</i>
+                <h2 style="color: rgb(65, 64, 64);">Telefone</h2>
+                <h4 style="color: rgb(93, 93, 93); margin-top: 2%;">Entre em contato por Telefone</h4>
+                <h3 style="color: rgb(65, 64, 64); margin-top: 2%;">+55 (11)4619-2960</h3>
+            </div>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.9724859415192!2d-46.90366358625446!3d-23.534481526619256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0152b7ed0ae7%3A0x1a5e607d0a4af7bc!2sRodoville!5e0!3m2!1spt-BR!2sbr!4v1656954864317!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+         <!-- Rodapé -->
+         <footer style="margin-top: 160px;">
+            <h1 class="footer_h1">RODOVILLE - LOCAÇÃO DE VEÍCULOS E SERVIÇOS</h1>
+            <div class="boxs">
+                <ul class="footer_ul">
+                    <li>
+                        <i class="material-icons" style="position: absolute; margin-left: -1.7%; margin-top: -3px;">phone </i> 
+                        <a>+55 (11)4619-2960</a></li>
+                    <li> 
+                        <i class="material-icons" style="position: absolute; margin-left: -1.7%; margin-top: -3px;">email</i> 
+                        <a >Rodoville2@uol.com.br</a></li>
+                    <li> 
+                        <i class="material-icons" style="position: absolute; margin-left: -1.7%; margin-top: -3px;">place</i> 
+                        <a href="https://www.google.com/maps/place/Rodoville/@-23.5344828,-46.9020972,19z/data=!3m1!4b1!4m5!3m4!1s0x94cf0152b7ed0ae7:0x1a5e607d0a4af7bc!8m2!3d-23.5344922!4d-46.9015511">Tv. Do Bebeto, Vila Anita Costa 91 (Google-Maps)</a></li>
+                    <li>
+                        <i class="material-icons" style="position: absolute; margin-left: -1.7%; margin-top: -3px;">business</i> 
+                        <a>© Rodoville Serviços Ltda</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+<script src="java.js"></script>
+</html>

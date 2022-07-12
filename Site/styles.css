@@ -14,13 +14,13 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(-100deg, #F2F9F1,#DDEEDF,#8BC34A,#86a74b );
     color:var(--color-white);
     background-repeat: no-repeat;
-    background-size: 100vw 100vw;
-    
+    background-size: 100vw 200vh;
 }
 .img_logo_header{
     width: 130px;
@@ -69,28 +69,28 @@ body{
     from{margin-left: -100vw;}
     top{margin-left: -10vw}
 }
-/*SLIDES*/
-.quadro{
-    height: 30.4vw;
-    width: 91.9vw;
+/*index*/
+.content .quadro{
+    height: 95.5%;
+    width: 97.9%;
     border-radius: 20px;
     overflow: hidden;
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 1%;
     margin-right: 1%;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
 }
-.quadro .slide img{
+.content .quadro .slide img{
     height: 100%;
     width: 100%;
 }
-.navigation{
+.content .navigation{
     position:absolute ;
-    margin-left: 45vw;
-    margin-top: 1vw;
+    margin-left: 45%;
+    margin-top: 1%;
     display: flex;
 }
-.bar{
+.content .bar{
     min-width: 1.5vw;
     min-height: 1.5vw;
     border: 2px solid black;
@@ -99,18 +99,18 @@ body{
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
-.bar:hover{
+.content .bar:hover{
     background-color: grey;
 }
-input{
+.content input{
    display: none;
 }
-.slides{
+.content .slides{
     display: flex;
     width: 400%;
     height: 100%;
 }
-.slide{
+.content .slide{
     width: 25%;
     transition: .6s;
 }
@@ -126,49 +126,49 @@ input{
 #slide4:checked ~ .s1{
     margin-left: -75%;
 }
-.clientes{
-    min-height: 13.4vw;
-    width: 95vw;
+.content .clientes{
+    height: 40vh;
+    width: 97vw;
     background-color: #fff;
     border-radius: 20px;
-    margin-top: 7.5vw;
-    margin-left: 1.5vw;
+    margin-top: 8%;
+    margin-left: 1%;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
     display: flex;
     justify-content: space-evenly;
 }
-.clientes a {
+.content .clientes a {
     color:#030303;
     text-decoration: none ;
     font-size: 20px;
 }
-.clientes h1{
+.content .clientes h1{
     font-size: 20px;
 }
 .clientes img{
     height: 9vw;
-    margin-top: 1.5vw;
+    margin-top: 3.9vw;
 }
 .cidades:hover img{
     height: 10vw;
     transition: 0.5s;
     overflow: hidden;
 }
-.tituloimg{
-    width: 14vw;
-    height: 3vw;
-    margin-top: 6%;
-    right: 82vw;
-    position:absolute ;
-    border-radius: 10px;
-    box-shadow: 5px 5px rgba(0,0,0,0.75);
+.content .tituloimg{
+    margin-top: 7%;
+    left: 4%;
+    position:absolute ;  
+}
+.content .tituloimg img{
+    width: 15vw;
+    border-radius: 2px;
 }
 /*Adaptando para resoluçoes menores que 1500px*/
  @media screen and (max-width: 900px){
    
     body{
         background: linear-gradient(-100deg, #F2F9F1,#DDEEDF,#8BC34A,#86a74b );
-        background-size: 100vw 160vw;
+        background-size: 100vw 180vw;
     }
     /* CABEÇALHO */
     .btn_icon_header{
@@ -185,40 +185,49 @@ input{
         animation-duration: 0.5s;
         margin-left: -100vw;
     }
-    /* SLIDES */
-    .clientes {
-        margin-top: 20.9vw;
-        height: 36vw;
+    /* index*/
+    .content .clientes {
+        margin-top: 20%;
+        height: 38vw;
     }
-    .tituloimg{
-        margin-top: 18.9vw;
-        box-shadow: 2.5px 2.5px rgba(0,0,0,0.75);
+    .content .tituloimg{
+        margin-top:18vw;
     }
-    .clientes h1{
-       font-size: 10px;
+    .content .tituloimg img{
+        width: 25vw;
     }
-    .clientes img{
-        width: 16vw;
-        height: 16vw;
+    .content .clientes h1{
+       font-size: 15px;
+    }
+    .content .clientes img{
+        width: 15vw;
+        height: 15vw;
         margin-top: 8vw;
     }
-    .cidades:hover img{
-        height: 16vw;
+    .content .clientes img:hover{
+        height: 20vw;
+        width: 20vw;
     }
-    .quadro{
-        margin-top: 10%;
-        height: 38vw;   
+    .content .quadro{
+        margin-top: 1%;
+        width: 96vw;
+        height: 55vw;   
     }
-    .navigation{
-       display: none;
-    }    
+    .content .bar{
+        min-width: 2.5vw;
+        min-height: 2.5vw;
+    }
+    .content .navigation{
+        margin-left: 40%;
+    }
     /* Rodape */
     footer{
-        margin-top: 30%;
-        min-height: 45%;
+        margin-top: -10%;
+        min-width: 100%;
+        max-height: 150px;
     }
-    footer h2{
-    font-size: 80%;
+    footer .footer_h1{
+    font-size: 90%;
     }
   
     footer li{
@@ -236,68 +245,94 @@ input{
         font-size: 150%;
     }
     /*Serviços*/
-    .servicos{
-        height: 725vw;
+    .content .servicos{
+        min-height: 816vw;
         max-width: 95vw;
     }
-    .servicos .min_img{
-        min-width: 37.8vw;
+    .content .servicos .min_img{
+        min-width: 38.8vw;
         height: 10px;
-        margin-top: 100%;
+        margin-top: 80%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    .servicos .min_img .miniatura img{
+    .content .servicos .min_img .miniatura img{
         height: 90%;
         width: 220%;
         margin-left: 7%;
         margin-top: 1%;
     }
+    .content .text_servi h1{
+        font-size: 150%;
+        margin-left: 3%;
+    }
     .content .text_servi{
         right: 8%;
-        top: 10%;
+        margin-top: 10%;
         width: 87vw;
-        height: 80vw;
+        height: 60vw;
     }
-    .text_servi .titulo_text{
-        font-size: 130%;
-        margin-left: 5%;
+    .content .text_servi ul{
+        margin-top: 20%;
     }
-    .text_servi ul li{
-      font-size: 480%;
+    .content .text_servi ul li{
+      font-size: 380%;
     }
     .content .popup-image img {
         width: 380px;
     }
+    /*contato*/ 
+    .contato{
+        height: 240.4vh;
+    }
+    .contato .contatenos{
+        min-height: 13.23%;
+    }
+    .content .contato .contatenos .text_cont{
+       font-size: 30px;
+       margin-top: 6%;
+    }
+    .content .contato .email{
+        margin-top: 120%;
+        font-size: 120%;
+        margin-left: -3%;
+    }
+    .content .contato .telefone{
+        margin-top: 180%;
+        font-size: 120%;
+        margin-left: -3%;
+    }
+    .content .contato .mapa{
+       margin-top: 25.5%;
+       width: 92.9vw;
+       height: 80vw;
+       border-width: 5px;
+    }
+    /**/
     
 }
 /*Rodapé*/
 footer{
     width: 100%;
-    height: 40%;
-    background: #4e6423;
-    text-align: center; 
+    height: 190px;
+    background: #4e6423; 
 }
-footer ul {
-    height: 4vw;
-    margin-top: 0px;
+footer .footer_ul {
+    margin-top: 1vw;
 }
-
+footer h1{
+    font-size: 1.5vw;
+}
 footer .boxs{
     text-align: center;
-    
 }
 footer .boxs:nth-child(4){
     width: 400px;
 }
-.boxs h2{
-    margin-top: 10px;
-    color: #fff;
-}
 .boxs ul li{
     margin:  10px 0px;
-    list-style: none;
+    list-style: none; 
 }
 .boxs ul li a{
     color: #ddd;
@@ -347,7 +382,7 @@ footer .boxs:nth-child(4){
     top: 0%;
     left: 0%;
     background: rgba(0,0,0,.9);
-    height: 100%;
+    height: 120%;
     width: 100%;
     z-index: 100;
     display: none;
@@ -364,11 +399,11 @@ footer .boxs:nth-child(4){
 }
 .popup-image img{
     position: absolute;
-    top: 50%; left: 50%;
+    top: 40%; left: 50%;
     transform: translate(-50%,-50% );
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 750px;
+    width: 950px;
     object-fit: cover;
 }
 .text_servi h1{
@@ -378,6 +413,7 @@ footer .boxs:nth-child(4){
     color: #fff;
     width: 90%;
     position: absolute;
+   
 }
 .text_servi{
     margin-top: 4%;
@@ -390,9 +426,109 @@ footer .boxs:nth-child(4){
     position: absolute;
 }
 .text_servi ul{
+    
     margin-top: 15%;
     text-align: left;
     font-size: 1.1vw;
     margin-left:5vw;
     color: #fff;
+}
+/*contato*/
+.contato{
+    min-height: 50.4vw;
+    width: 95vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 3vw;
+    margin-left: 1.5vw;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-evenly;
+}
+.contato .contatenos{
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--color-green1);
+    position: absolute;
+    width: 95vw;
+    height: 15vw;
+}
+.contato .contatenos .text_cont{
+    color: #fff;
+    margin-top: 6vw;
+    font-size: 3vw;
+}
+.contato .email{
+    font-size: 1vw;
+    position: absolute;
+    margin-top: 25vw;
+    margin-left: -65vw;
+}
+.contato .telefone{
+    font-size: 1vw;
+    position: absolute;
+    margin-top: 25vw;
+    margin-left: 65vw;
+}
+.contato .mapa{
+    border-radius:5px;
+    border-width: 8px;
+    border-color: var(--color-green1);
+    margin-top: 15vw;
+    width: 39vw;
+    
+    height: 35vw;
+}
+/*sobre*/
+.sobre{
+    min-height: 110.4vh;
+    width: 95vw;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-left: 1.5%;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-evenly;
+}
+.sobre .sobre-nos{
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--color-green1);
+    position: absolute;
+    width: 95vw;
+    height: 35vh;
+}
+.sobre .sobre-nos .text_sobre{
+    color: #fff;
+    margin-top: 6%;
+    font-size: 250%;
+}
+.sobre .quem-somos{
+    font-size: 100%;
+    position: absolute;
+    margin-top: 22%;
+    margin-left: -50%;
+}
+.sobre .o-que-fazemos{
+    font-size: 100%;
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 50%;
+}
+.sobre .quem-somos .p1{
+    margin-left:38%; 
+    width: 25%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-top:0.7%; 
+    color:rgb(66, 65, 65); 
+    line-height: 22px; 
+    text-align: justify;
+}
+.sobre .o-que-fazemos .p2{
+    margin-left:14%; 
+    width: 72%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin-top:2%; 
+    color:rgb(66, 65, 65); 
+    line-height: 22px; 
+    text-align: justify;
 }

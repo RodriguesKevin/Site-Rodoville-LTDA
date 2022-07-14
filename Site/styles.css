@@ -71,8 +71,8 @@ body{
 }
 /*index*/
 .content .quadro{
-    height: 95.5%;
-    width: 97.9%;
+    height: 70.5vh;
+    width: 96.9vw;
     border-radius: 20px;
     overflow: hidden;
     margin-top: 1%;
@@ -145,12 +145,12 @@ body{
 .content .clientes h1{
     font-size: 20px;
 }
-.clientes img{
-    height: 9vw;
+.content .clientes img{
+    height: 17vh;
     margin-top: 3.9vw;
 }
-.cidades:hover img{
-    height: 10vw;
+.content .cidades img:hover{
+    height: 19vh;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -163,12 +163,11 @@ body{
     width: 15vw;
     border-radius: 2px;
 }
-/*Adaptando para resoluçoes menores que 1500px*/
- @media screen and (max-width: 900px){
-   
+/*Adaptando para resoluçoes menores que 960px*/
+ @media screen and (max-width: 955px), (max-height: 500px){
     body{
         background: linear-gradient(-100deg, #F2F9F1,#DDEEDF,#8BC34A,#86a74b );
-        background-size: 100vw 180vw;
+        background-size: 100vw 300vh;
     }
     /* CABEÇALHO */
     .btn_icon_header{
@@ -187,26 +186,27 @@ body{
     }
     /* index*/
     .content .clientes {
-        margin-top: 20%;
+        margin-top: 17.9%;
+        width: 96vw;
         height: 38vw;
     }
     .content .tituloimg{
-        margin-top:18vw;
+        margin-top:15%;
     }
     .content .tituloimg img{
         width: 25vw;
     }
     .content .clientes h1{
-       font-size: 15px;
+       font-size: 14px;
     }
     .content .clientes img{
         width: 15vw;
-        height: 15vw;
+        height: 17vw;
         margin-top: 8vw;
     }
     .content .clientes img:hover{
-        height: 20vw;
-        width: 20vw;
+        width: 15vw;
+        height: 17vw;
     }
     .content .quadro{
         margin-top: 1%;
@@ -218,31 +218,28 @@ body{
         min-height: 2.5vw;
     }
     .content .navigation{
+        margin-top: 7%;
         margin-left: 40%;
     }
     /* Rodape */
-    footer{
-        margin-top: -10%;
-        min-width: 100%;
-        max-height: 150px;
+    .content .inicio{/*Footer pagina inicial*/
+       max-height: 160px;
     }
-    footer .footer_h1{
-    font-size: 90%;
+    .content  .footer_servicos{/*Footer pagina inicial*/
+        max-height: 140px;
     }
-  
-    footer li{
-        font-size: 75%;
-
+    .content footer .footer_h1{
+    font-size: 100%;
     }
-    footer li a{
-        margin-left: 3%;
+    .content footer .boxs .footer_ul li{
+        font-size: 80%;
     }
-    footer .boxs{
+    .content footer .boxs .footer_ul li .material-icons{
+        font-size: 140%;
+    }
+    .content footer .boxs{
         width: 100%;    
         text-align:center;
-    }
-    footer .boxs ul li i{
-        font-size: 150%;
     }
     /*Serviços*/
     .content .servicos{
@@ -280,41 +277,89 @@ body{
       font-size: 380%;
     }
     .content .popup-image img {
-        width: 380px;
+        width: 90%;
     }
     /*contato*/ 
-    .contato{
-        height: 240.4vh;
+    .content .contato{
+        height: 110.4vmax;
     }
-    .contato .contatenos{
-        min-height: 13.23%;
+    .content .contato .contatenos{
+        height: 10.5vmax;
     }
     .content .contato .contatenos .text_cont{
-       font-size: 30px;
-       margin-top: 6%;
+        font-size: 180%;
     }
     .content .contato .email{
-        margin-top: 120%;
+        margin-top: 63vmax;
         font-size: 120%;
         margin-left: -3%;
     }
     .content .contato .telefone{
-        margin-top: 180%;
+        margin-top: 85vmax;
         font-size: 120%;
         margin-left: -3%;
     }
     .content .contato .mapa{
-       margin-top: 25.5%;
-       width: 92.9vw;
-       height: 80vw;
+       margin-top: 10.5vmax;
+       width: 96vw;
+       height: 40vh;
        border-width: 5px;
     }
-    /**/
-    
+    .content .contato .email .material-icons{
+        font-size: 10vw;
+        margin-left: 1%;
+    }
+    .content .contato .telefone .material-icons{
+        font-size: 10vw;
+        margin-left: 1%;
+    }
+    /*sobre*/
+    .content .sobre{
+        height: 110.4vmax;
+    }
+    .content .sobre .sobre-nos{
+        height: 10.5vmax;
+    }
+    .content .sobre .sobre-nos .text_sobre{
+        font-size: 180%;
+    }
+    .content .sobre .quem-somos{
+        margin-top: 20vmax;
+        margin-left: -1vmax;
+    }
+    .content .sobre .o-que-fazemos{
+        margin-top: 60vmax;
+        margin-left: -1vmax;
+    }
+    .content .sobre .quem-somos .p1{
+        width: 40vmax;
+    }
+    .content .sobre .o-que-fazemos .p2{
+        width: 40vmax;
+    }
 }
 /*Rodapé*/
-footer{
+.inicio{
     width: 100%;
+    margin-top: 191px;
+    height: 190px;
+    background: #4e6423; 
+}
+.footer_servicos{
+    width: 100%;
+    margin-top: 198.5px;
+    height: 190px;
+    background: #4e6423; 
+}
+.footer_contato{
+    width: 100%;
+    margin-top: 80px;
+    height: 190px;
+    background: #4e6423; 
+}
+.footer_sobre{
+    width: 100%;
+    margin-top: 80px;
     height: 190px;
     background: #4e6423; 
 }
@@ -330,18 +375,26 @@ footer .boxs{
 footer .boxs:nth-child(4){
     width: 400px;
 }
-.boxs ul li{
+footer .boxs ul li .material-icons{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+footer .boxs ul li{
     margin:  10px 0px;
     list-style: none; 
 }
-.boxs ul li a{
+footer .boxs ul li a{
     color: #ddd;
     text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
 }
-.boxs ul li a:hover{
+footer .boxs ul li a:hover{
     color: #fff;
 }
-.boxs p{
+footer .boxs p{
     color: #fff;
     text-align: center ;
 }
@@ -429,18 +482,18 @@ footer .boxs:nth-child(4){
     
     margin-top: 15%;
     text-align: left;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     margin-left:5vw;
     color: #fff;
 }
 /*contato*/
 .contato{
-    min-height: 50.4vw;
+    min-height: 50.4vh;
     width: 95vw;
     background-color: #fff;
     border-radius: 20px;
-    margin-top: 3vw;
-    margin-left: 1.5vw;
+    margin-top: 3%;
+    margin-left: 1.5%;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.75);
     display: flex;
     justify-content: space-evenly;
@@ -450,37 +503,42 @@ footer .boxs:nth-child(4){
     background-color: var(--color-green1);
     position: absolute;
     width: 95vw;
-    height: 15vw;
+    height: 12.6vw;
 }
 .contato .contatenos .text_cont{
     color: #fff;
-    margin-top: 6vw;
-    font-size: 3vw;
+    margin-top: 6%;
+    font-size: 40px;
+}
+.contato .email .material-icons{
+    font-size: 5vw;
+    color: gray;
+}
+.contato .telefone .material-icons{
+    font-size: 5vw;
+    color: gray;
 }
 .contato .email{
-    font-size: 1vw;
     position: absolute;
-    margin-top: 25vw;
-    margin-left: -65vw;
+    margin-top: 25%;
+    margin-left: -65%;
 }
 .contato .telefone{
-    font-size: 1vw;
     position: absolute;
-    margin-top: 25vw;
-    margin-left: 65vw;
+    margin-top: 25%;
+    margin-left: 65%;
 }
 .contato .mapa{
     border-radius:5px;
     border-width: 8px;
     border-color: var(--color-green1);
-    margin-top: 15vw;
+    margin-top: 13.2%;
     width: 39vw;
-    
-    height: 35vw;
+    height: 60vh;
 }
 /*sobre*/
 .sobre{
-    min-height: 110.4vh;
+    min-height: 90.4vh;
     width: 95vw;
     background-color: #fff;
     border-radius: 20px;
@@ -495,7 +553,7 @@ footer .boxs:nth-child(4){
     background-color: var(--color-green1);
     position: absolute;
     width: 95vw;
-    height: 35vh;
+    height: 12.6vw;
 }
 .sobre .sobre-nos .text_sobre{
     color: #fff;
@@ -511,12 +569,21 @@ footer .boxs:nth-child(4){
 .sobre .o-que-fazemos{
     font-size: 100%;
     position: absolute;
-    margin-top: 22%;
+    margin-top: 22.5%;
     margin-left: 50%;
 }
+.sobre .quem-somos h2{
+    margin-top:0.5%; 
+    color:rgb(66, 65, 65); 
+    font-size: 200%;
+}
+.sobre .o-que-fazemos h2{
+    margin-top:0.5%; 
+    color:rgb(66, 65, 65); 
+    font-size: 200%;
+}
 .sobre .quem-somos .p1{
-    margin-left:38%; 
-    width: 25%; 
+    width: 25vw; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     margin-top:0.7%; 
     color:rgb(66, 65, 65); 
@@ -524,8 +591,7 @@ footer .boxs:nth-child(4){
     text-align: justify;
 }
 .sobre .o-que-fazemos .p2{
-    margin-left:14%; 
-    width: 72%; 
+    width: 25vw; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     margin-top:2%; 
     color:rgb(66, 65, 65); 
